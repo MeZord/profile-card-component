@@ -1,0 +1,139 @@
+.image{
+   
+   // position: absolute;
+   // background-image: url('/images/bg-pattern-top.svg'); 
+   // background-size: cover;
+   // background-repeat: no-repeat;
+ //   background-position: center center;
+ //   min-height: 17.5rem;
+  //  width: 100%;
+ //   z-index: 10;
+  //  background-size: 189%;
+  // background-position: 147% -360%;
+
+
+}
+
+.container{
+    min-height: 100vh;
+    margin: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+
+
+    & .card{
+       height: 100%;
+        width: 100%;
+        box-shadow: 0 30px 100px -60px;
+
+        @include breakpoint-up(medium){
+            width: 35.2rem;
+        }
+    
+        @include breakpoint-up(large){
+            width: 35.2rem;
+        }
+
+
+        &__top{
+            border-radius: 1rem 1rem 0 0;
+            background-image: url(/images/bg-pattern-card.svg);
+            background-position: center center;
+            background-size: cover;
+            height: 141px;
+        }
+
+        &__content{
+         
+            border-radius: 0 0 1rem 1rem;
+            background-color: white;
+           
+
+           & img{
+                position: relative;
+                border: 5px solid white;
+                border-radius: 100px; 
+                height: 10.5rem;
+                margin-top: -50px;
+                margin-bottom:1.4rem ;
+            }
+
+            & h1{
+                font-size: 1.8rem;
+                margin-bottom: .8rem;
+                font-family: 'Kumbh Sans', sans-serif;
+                & span{
+                    color:$darkgrayishblue;
+                    font-weight: 400;
+                }
+
+            }
+
+            & p {
+                margin-bottom: 2.2rem;
+                font-size: 1.4rem;
+                color:$darkgrayishblue;
+                    font-weight: 400;
+
+            }
+
+            & .stats{
+                
+                border-top: 1px solid $darkgray;
+                padding-top: 2.5rem;
+               
+                
+                & .wrap{
+                    display: flex;
+                justify-content: center;
+                justify-content: space-between;
+                    padding: 0px 5rem;
+                }
+               
+
+                & p{
+                    font-size: 1rem;
+                    margin-bottom: 2.5rem;
+                    letter-spacing: 1.5px;
+                    
+
+
+                    & span{
+                        display: block;
+                         color: $verydarkdblue;
+                         display: block;
+                         font-weight: bold;
+                         font-size: 1.8rem;
+                         margin-bottom: .4rem;
+                         
+     
+                     }
+
+
+
+                }
+           
+
+
+            }
+           
+        }
+
+    }
+    //&::after {
+      //  content: "";
+       // position: absolute;
+      //  width: 100%;
+      //  height: 100%;
+      //  background-image: url('/images/bg-pattern-bottom.svg');
+    
+      //  background-repeat: no-repeat;
+     //   background-position: center bottom;
+      //  background-size: 155%;
+     //   background-position: -81% 201%;
+    //   } 
+}

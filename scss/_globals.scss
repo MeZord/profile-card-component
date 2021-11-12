@@ -1,0 +1,41 @@
+html {
+    font-size: 62.5%;
+    
+    
+  }
+  :root {
+    /*Display size*/
+    --mobile: 375px;
+    --desktop: 1439px;
+  }
+  *,
+  *::before,
+  *::after {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+
+  
+  body{
+      min-height: 100vh;
+      font-weight: 400;
+      font-family: $font-kumbh;
+      font-size: $font-std;
+      background-color: $darkcyan;
+      
+    background: url('/images/bg-pattern-top.svg'),url('/images/bg-pattern-bottom.svg') $darkcyan;
+    background-position: top -270px left -360px, bottom -253px right -359px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 150%;
+
+
+
+    @include breakpoint-up(large){ 
+      background-position: top -545px left -320px, bottom -677px right -244px;
+      background-size: 70%;
+ 
+    }
+  }

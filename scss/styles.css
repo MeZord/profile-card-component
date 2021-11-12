@@ -1,0 +1,150 @@
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  /*Display size*/
+  --mobile: 375px;
+  --desktop: 1439px;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.8rem;
+  background-color: #19a2ae;
+  background: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg") #19a2ae;
+  background-position: top -270px left -360px, bottom -253px right -359px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 150%;
+}
+
+@media (min-width: 64em) {
+  body {
+    background-position: top -545px left -320px, bottom -677px right -244px;
+    background-size: 70%;
+  }
+}
+
+.container {
+  min-height: 100vh;
+  margin: 0 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.container .card {
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: 0 30px 100px -60px;
+          box-shadow: 0 30px 100px -60px;
+}
+
+@media (min-width: 40em) {
+  .container .card {
+    width: 35.2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .container .card {
+    width: 35.2rem;
+  }
+}
+
+.container .card__top {
+  border-radius: 1rem 1rem 0 0;
+  background-image: url(/images/bg-pattern-card.svg);
+  background-position: center center;
+  background-size: cover;
+  height: 141px;
+}
+
+.container .card__content {
+  border-radius: 0 0 1rem 1rem;
+  background-color: white;
+}
+
+.container .card__content img {
+  position: relative;
+  border: 5px solid white;
+  border-radius: 100px;
+  height: 10.5rem;
+  margin-top: -50px;
+  margin-bottom: 1.4rem;
+}
+
+.container .card__content h1 {
+  font-size: 1.8rem;
+  margin-bottom: .8rem;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container .card__content h1 span {
+  color: #6a6f81;
+  font-weight: 400;
+}
+
+.container .card__content p {
+  margin-bottom: 2.2rem;
+  font-size: 1.4rem;
+  color: #6a6f81;
+  font-weight: 400;
+}
+
+.container .card__content .stats {
+  border-top: 1px solid #969696;
+  padding-top: 2.5rem;
+}
+
+.container .card__content .stats .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 5rem;
+}
+
+.container .card__content .stats p {
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1.5px;
+}
+
+.container .card__content .stats p span {
+  display: block;
+  color: #2d3248;
+  display: block;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: .4rem;
+}
+/*# sourceMappingURL=styles.css.map */
