@@ -25,7 +25,7 @@ html {
       font-size: $font-std;
       background-color: $darkcyan;
       
-    background: url('/images/bg-pattern-top.svg'),url('/images/bg-pattern-bottom.svg') $darkcyan;
+    background: url('../images/bg-pattern-top.svg'),url('../images/bg-pattern-bottom.svg') $darkcyan;
     background-position: top -270px left -360px, bottom -253px right -359px;
     background-repeat: no-repeat;
     background-attachment: fixed;
